@@ -164,35 +164,7 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* SEÇÃO 3: PROBLEMA */}
-      <section className="py-20 px-4 bg-zinc-950">
-        <div className="max-w-6xl mx-auto text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            Cansado de Trabalhar Duro e <span className="text-red-500">Ganhar Pouco?</span>
-          </h2>
-          <p className="text-xl text-gray-400">Você não está sozinho. Milhares estavam na mesma situação...</p>
-        </div>
-
-        <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-6">
-          <div className="bg-gradient-to-br from-zinc-900 to-black border border-red-500/30 rounded-2xl p-8 text-center">
-            <DollarSign className="w-12 h-12 text-red-500 mx-auto mb-4" />
-            <h3 className="text-xl font-bold mb-2">Salário que Nunca Aumenta</h3>
-            <p className="text-gray-400">Trabalha horas extras mas o dinheiro nunca é suficiente</p>
-          </div>
-          <div className="bg-gradient-to-br from-zinc-900 to-black border border-red-500/30 rounded-2xl p-8 text-center">
-            <Briefcase className="w-12 h-12 text-red-500 mx-auto mb-4" />
-            <h3 className="text-xl font-bold mb-2">Contas que Não Param</h3>
-            <p className="text-gray-400">Mal fecha o mês e as contas já estão te esperando</p>
-          </div>
-          <div className="bg-gradient-to-br from-zinc-900 to-black border border-red-500/30 rounded-2xl p-8 text-center">
-            <Home className="w-12 h-12 text-red-500 mx-auto mb-4" />
-            <h3 className="text-xl font-bold mb-2">Sem Tempo para Família</h3>
-            <p className="text-gray-400">Preso em um ciclo sem fim de trabalho e estresse</p>
-          </div>
-        </div>
-      </section>
-
-      {/* SEÇÃO 4: VICENTE */}
+      {/* SEÇÃO 3: VICENTE */}
       <section className="py-20 px-4 bg-gradient-to-b from-black to-zinc-950">
         <div className="max-w-4xl mx-auto">
           <div className="bg-gradient-to-br from-zinc-900 to-black border-2 border-green-500/30 rounded-3xl p-8 md:p-12">
@@ -230,7 +202,7 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* SEÇÃO 5: CASE DE SUCESSO HERO */}
+      {/* SEÇÃO 4: CASE DE SUCESSO HERO */}
       <section className="py-20 px-4 bg-zinc-950">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12">
@@ -295,7 +267,7 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* SEÇÃO 6: GALERIA DE PROVAS */}
+      {/* SEÇÃO 5: GALERIA DE PROVAS */}
       <section className="py-20 px-4 bg-gradient-to-b from-zinc-950 to-black">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
@@ -321,7 +293,7 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* SEÇÃO 7: COMO FUNCIONA */}
+      {/* SEÇÃO 6: COMO FUNCIONA */}
       <section className="py-20 px-4 bg-zinc-950">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12">
@@ -357,7 +329,7 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* SEÇÃO 8: O QUE VOCÊ RECEBE */}
+      {/* SEÇÃO 7: O QUE VOCÊ RECEBE */}
       <section className="py-20 px-4 bg-gradient-to-b from-black to-zinc-950">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12">
@@ -384,7 +356,7 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* SEÇÃO 9: FAQ */}
+      {/* SEÇÃO 8: FAQ */}
       <section className="py-20 px-4 bg-zinc-950">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
@@ -415,7 +387,7 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* SEÇÃO 10: CTA FINAL */}
+      {/* SEÇÃO 9: CTA FINAL */}
       <section id="cta" className="py-20 px-4 bg-gradient-to-b from-black to-green-950/30">
         <div className="max-w-4xl mx-auto text-center">
           <div className="bg-gradient-to-br from-zinc-900 to-black border-4 border-green-500 rounded-3xl p-8 md:p-12">
