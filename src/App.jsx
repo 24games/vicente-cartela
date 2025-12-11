@@ -288,7 +288,7 @@ export default function LandingPage() {
                 {[1, 2, 3, 4, 5, 1, 2, 3, 4, 5].map((i, idx) => (
                   <div key={idx} className="bg-zinc-900 border border-green-500/30 rounded-xl overflow-hidden mx-2 hover:border-green-500 transition-all">
                     <img 
-                      src={`/images/proofs/slide-${i}.png`} 
+                      src={`/images/slide${i}.jpg`} 
                       alt={`Prova social ${i}`}
                       className="w-full h-auto object-cover"
                       onError={(e) => {
@@ -307,7 +307,7 @@ export default function LandingPage() {
                 {[2, 3, 4, 5, 1, 2, 3, 4, 5, 1].map((i, idx) => (
                   <div key={idx} className="bg-zinc-900 border border-green-500/30 rounded-xl overflow-hidden mx-2 hover:border-green-500 transition-all">
                     <img 
-                      src={`/images/proofs/slide-${i}.png`} 
+                      src={`/images/slide${i}.jpg`} 
                       alt={`Prova social ${i}`}
                       className="w-full h-auto object-cover"
                       onError={(e) => {
@@ -326,7 +326,7 @@ export default function LandingPage() {
                 {[3, 4, 5, 1, 2, 3, 4, 5, 1, 2].map((i, idx) => (
                   <div key={idx} className="bg-zinc-900 border border-green-500/30 rounded-xl overflow-hidden mx-2 hover:border-green-500 transition-all">
                     <img 
-                      src={`/images/proofs/slide-${i}.png`} 
+                      src={`/images/slide${i}.jpg`} 
                       alt={`Prova social ${i}`}
                       className="w-full h-auto object-cover"
                       onError={(e) => {
