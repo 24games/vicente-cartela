@@ -293,70 +293,7 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* SEÇÃO 6: COMO FUNCIONA */}
-      <section className="py-20 px-4 bg-zinc-950">
-        <div className="max-w-5xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">
-              Como Funciona? <span className="text-green-500">É Simples!</span>
-            </h2>
-            <p className="text-xl text-gray-400">3 passos para começar a lucrar hoje</p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="text-center">
-              <div className="w-20 h-20 bg-green-500 rounded-full flex items-center justify-center text-black text-3xl font-bold mx-auto mb-4">
-                1
-              </div>
-              <h3 className="text-2xl font-bold mb-3">Entre no Telegram VIP</h3>
-              <p className="text-gray-400">Leva apenas 30 segundos. Clique no botão e seja redirecionado automaticamente.</p>
-            </div>
-            <div className="text-center">
-              <div className="w-20 h-20 bg-green-500 rounded-full flex items-center justify-center text-black text-3xl font-bold mx-auto mb-4">
-                2
-              </div>
-              <h3 className="text-2xl font-bold mb-3">Receba as Tips Diárias</h3>
-              <p className="text-gray-400">Todos os dias enviamos as melhores oportunidades com odds 1.40 e +80% de acerto.</p>
-            </div>
-            <div className="text-center">
-              <div className="w-20 h-20 bg-green-500 rounded-full flex items-center justify-center text-black text-3xl font-bold mx-auto mb-4">
-                3
-              </div>
-              <h3 className="text-2xl font-bold mb-3">Siga o Método e Lucre</h3>
-              <p className="text-gray-400">Copie exatamente as entradas. Em 3 dias você completa os 9 passos.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* SEÇÃO 7: O QUE VOCÊ RECEBE */}
-      <section className="py-20 px-4 bg-gradient-to-b from-black to-zinc-950">
-        <div className="max-w-5xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              O Que Você Recebe <span className="text-green-500">100% GRÁTIS</span>
-            </h2>
-            <div className="inline-block bg-green-500 text-black font-bold text-xl px-8 py-3 rounded-full mb-4">
-              VALOR REAL: $197/MÊS — HOJE: R$0
-            </div>
-          </div>
-
-          <div className="bg-gradient-to-br from-zinc-900 to-black border-2 border-green-500/30 rounded-3xl p-8 md:p-12">
-            <div className="grid md:grid-cols-2 gap-6">
-              {benefits.map((benefit, i) => (
-                <div key={i} className="flex items-start gap-3">
-                  <div className="flex-shrink-0 w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
-                    <Check className="w-5 h-5 text-black" />
-                  </div>
-                  <span className="text-lg text-gray-300">{benefit}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* SEÇÃO 8: FAQ */}
+      {/* SEÇÃO 6: FAQ */}
       <section className="py-20 px-4 bg-zinc-950">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
@@ -387,7 +324,7 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* SEÇÃO 9: CTA FINAL */}
+      {/* SEÇÃO 7: CTA FINAL */}
       <section id="cta" className="py-20 px-4 bg-gradient-to-b from-black to-green-950/30">
         <div className="max-w-4xl mx-auto text-center">
           <div className="bg-gradient-to-br from-zinc-900 to-black border-4 border-green-500 rounded-3xl p-8 md:p-12">
