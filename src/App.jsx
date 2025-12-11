@@ -267,8 +267,8 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* SEÇÃO 5: GALERIA DE PROVAS */}
-      <section className="py-20 px-4 bg-gradient-to-b from-zinc-950 to-black">
+      {/* SEÇÃO 5: GALERIA DE PROVAS - CARROSSEL VERTICAL */}
+      <section className="py-20 px-4 bg-gradient-to-b from-zinc-950 to-black overflow-hidden">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold mb-4">
@@ -277,20 +277,91 @@ export default function LandingPage() {
             <p className="text-xl text-gray-400">Resultados reais de membros reais</p>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-            {[1, 2, 3, 4, 5, 6, 7, 8].map((i) => (
-              <div key={i} className="bg-zinc-900 border border-green-500/30 rounded-xl p-4 hover:scale-105 hover:border-green-500 transition-all cursor-pointer group">
-                <div className="aspect-square bg-gradient-to-br from-green-500/20 to-black rounded-lg mb-3 flex items-center justify-center">
-                  <TrendingUp className="w-12 h-12 text-green-500 group-hover:scale-110 transition-transform" />
-                </div>
-                <div className="text-center">
-                  <div className="text-green-500 font-bold text-lg">+$XXX.XXX</div>
-                  <div className="text-xs text-gray-500">Ganho verificado #{i}</div>
-                </div>
+          <div className="relative h-[600px] overflow-hidden">
+            {/* Gradient overlays */}
+            <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-zinc-950 to-transparent z-10"></div>
+            <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-black to-transparent z-10"></div>
+
+            {/* Carrossel 1 */}
+            <div className="absolute left-0 w-1/3 h-full">
+              <div className="animate-scroll-vertical space-y-4">
+                {[1, 2, 3, 4, 5, 6, 1, 2, 3, 4, 5, 6].map((i, idx) => (
+                  <div key={idx} className="bg-zinc-900 border border-green-500/30 rounded-xl p-4 mx-2">
+                    <div className="aspect-square bg-gradient-to-br from-green-500/20 to-black rounded-lg mb-3 flex items-center justify-center">
+                      <TrendingUp className="w-12 h-12 text-green-500" />
+                    </div>
+                    <div className="text-center">
+                      <div className="text-green-500 font-bold text-lg">+${(Math.random() * 500 + 100).toFixed(0)}.XXX</div>
+                      <div className="text-xs text-gray-500">Membro #{i}</div>
+                    </div>
+                  </div>
+                ))}
               </div>
-            ))}
+            </div>
+
+            {/* Carrossel 2 */}
+            <div className="absolute left-1/3 w-1/3 h-full">
+              <div className="animate-scroll-vertical-reverse space-y-4">
+                {[7, 8, 9, 10, 11, 12, 7, 8, 9, 10, 11, 12].map((i, idx) => (
+                  <div key={idx} className="bg-zinc-900 border border-green-500/30 rounded-xl p-4 mx-2">
+                    <div className="aspect-square bg-gradient-to-br from-green-500/20 to-black rounded-lg mb-3 flex items-center justify-center">
+                      <Award className="w-12 h-12 text-green-500" />
+                    </div>
+                    <div className="text-center">
+                      <div className="text-green-500 font-bold text-lg">+${(Math.random() * 600 + 150).toFixed(0)}.XXX</div>
+                      <div className="text-xs text-gray-500">Membro #{i}</div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Carrossel 3 */}
+            <div className="absolute left-2/3 w-1/3 h-full">
+              <div className="animate-scroll-vertical space-y-4">
+                {[13, 14, 15, 16, 17, 18, 13, 14, 15, 16, 17, 18].map((i, idx) => (
+                  <div key={idx} className="bg-zinc-900 border border-green-500/30 rounded-xl p-4 mx-2">
+                    <div className="aspect-square bg-gradient-to-br from-green-500/20 to-black rounded-lg mb-3 flex items-center justify-center">
+                      <Target className="w-12 h-12 text-green-500" />
+                    </div>
+                    <div className="text-center">
+                      <div className="text-green-500 font-bold text-lg">+${(Math.random() * 700 + 200).toFixed(0)}.XXX</div>
+                      <div className="text-xs text-gray-500">Membro #{i}</div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
+
+        <style jsx>{`
+          @keyframes scroll-vertical {
+            0% {
+              transform: translateY(0);
+            }
+            100% {
+              transform: translateY(-50%);
+            }
+          }
+
+          @keyframes scroll-vertical-reverse {
+            0% {
+              transform: translateY(-50%);
+            }
+            100% {
+              transform: translateY(0);
+            }
+          }
+
+          .animate-scroll-vertical {
+            animation: scroll-vertical 30s linear infinite;
+          }
+
+          .animate-scroll-vertical-reverse {
+            animation: scroll-vertical-reverse 30s linear infinite;
+          }
+        `}</style>
       </section>
 
       {/* SEÇÃO 6: FAQ */}
