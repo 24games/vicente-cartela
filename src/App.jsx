@@ -113,10 +113,16 @@ export default function LandingPage() {
               Junte-se ao grupo VIP <span className="text-green-500 font-bold">GRATUITO</span> e receba tips diárias com <span className="text-green-500 font-bold">+80% de acerto</span>
             </p>
 
-            <a href="#cta" className="inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-black font-bold text-lg px-8 py-4 rounded-full transition-all transform hover:scale-105 shadow-lg shadow-green-500/50 mb-12 animate-pulse">
+            <a href="#cta" className="inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-black font-bold text-lg px-8 py-4 rounded-full transition-all transform hover:scale-105 shadow-lg shadow-green-500/50 mb-4 animate-pulse">
               <span>ENTRAR NO GRUPO VIP GRÁTIS</span>
               <TrendingUp className="w-5 h-5" />
             </a>
+
+            <div className="text-center mb-12">
+              <a href="https://telegram.org/dl" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-green-500 text-sm underline transition-colors">
+                ¿No tienes Telegram? Haz clic aquí.
+              </a>
+            </div>
 
             <div className="flex flex-wrap justify-center gap-6 text-center">
               <div className="flex items-center gap-2">
@@ -458,10 +464,16 @@ export default function LandingPage() {
               Junte-se a +12.000 membros que já estão lucrando com o método
             </p>
 
-            <a href="https://t.me/seu_grupo_aqui" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-3 bg-green-500 hover:bg-green-600 text-black font-bold text-2xl px-12 py-6 rounded-full transition-all transform hover:scale-105 shadow-2xl shadow-green-500/50 mb-6 animate-pulse">
+            <a href="https://t.me/seu_grupo_aqui" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-3 bg-green-500 hover:bg-green-600 text-black font-bold text-2xl px-12 py-6 rounded-full transition-all transform hover:scale-105 shadow-2xl shadow-green-500/50 mb-4 animate-pulse">
               <Zap className="w-8 h-8" />
               <span>ENTRAR NO GRUPO VIP AGORA</span>
             </a>
+
+            <div className="text-center mb-4">
+              <a href="https://telegram.org/dl" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-green-500 text-sm underline transition-colors">
+                ¿No tienes Telegram? Haz clic aquí.
+              </a>
+            </div>
 
             <div className="text-sm text-gray-400 flex items-center justify-center gap-2 mb-4">
               <Shield className="w-4 h-4 text-green-500" />
